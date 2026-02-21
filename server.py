@@ -5,7 +5,7 @@ import random
 # --- Define Global Variables ---
 
 # Template image filename
-filename = '/content/sample_data/eklavya-form.png'
+filename = 'https://i.ibb.co/S7XVzFF6/Ekl-1.png'
 
 # Font size
 font_size = 35
