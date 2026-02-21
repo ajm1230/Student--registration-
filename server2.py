@@ -1,8 +1,6 @@
 from PIL import Image, ImageDraw, ImageFont
 import matplotlib.pyplot as plt
 import random
-import requests
-from io import BytesIO
 
 # --- Define Global Variables ---
 
@@ -112,13 +110,7 @@ occupation_y = 1530
 # --- Image Processing ---
 
 # Load the template image
-# Load the template image from URL
-response = requests.get(filename)
-
-if response.status_code == 200:
-    img = Image.open(BytesIO(response.content)).convert('RGB')
-else:
-    raise Exception("Failed to load image from URL")
+img = Image.open(filename).convert('RGB')
 draw = ImageDraw.Draw(img)
 
 # Define font (using the global font_size)
