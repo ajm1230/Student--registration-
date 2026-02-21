@@ -7,7 +7,7 @@ from io import BytesIO
 # --- Define Global Variables ---
 
 # Template image filename
-filename = 'Ekl-1.png'
+filename = 'Ekl (1).png'
 
 # Font size
 font_size = 35
